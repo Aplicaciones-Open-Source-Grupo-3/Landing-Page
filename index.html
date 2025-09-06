@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyPark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="brand">EasyPark</div>
+        <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="#main" class="home-link" data-translate="main">Main</a></li>
+                <li><a href="#about" class="about-link" data-translate="about">About</a></li>
+                <li><a href="#how-it-works" class="how-it-works-link" data-translate="how_it_works">How it works?</a></li>
+                <li><a href="#pricing" class="pricing-link" data-translate="pricing">Pricing</a></li>
+                <li><a href="#contact" class="contact-link" data-translate="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Language Toggle Button -->
+    <button id="language-toggle" onclick="toggleLanguage()">ES</button>
+    </header>
+    <!-- Hero Section -->
+    <section id="main" class="hero">
+        <h1 class="hero-title" data-translate="hero_title">Parking Management</h1>
+        <h2 class="hero-subtitle" data-translate="hero_subtitle">Made Easy</h2>
+        <p class="hero-description" data-translate="hero_description">Maximize your revenue and offer a superior customer experience with our comprehensive solution</p>
+        <a href="#" class="cta-button" data-translate="start_now">Start now</a>
+    </section>
+    <!-- About Section-->
+    <section id="about" class="about">
+        <h2 class="about-title" data-translate="about_title">Do you have these problems?</h2>
+        <div class="about-cards">
+            <div class="card">
+            <h3 data-translate="problem1_title">Operational Inefficiency</h3>
+            <img src="assets/problem1.png" alt="Operational Inefficiency">
+        </div>
+        <div class="card">
+            <h3 data-translate="problem2_title">Revenue Loss</h3>
+            <img src="assets/problem2.png" alt="Revenue Loss">
+        </div>
+        <div class="card">
+            <h3 data-translate="problem3_title">Poor Customer Experience</h3>
+        <img src="assets/problem3.png" alt="Poor Customer Experience">
+        </div>
+        </div>
+        <p class="about-closing" data-translate="about_closing">So Easy Park is the solution for you</p>
+    </section>
+    <!-- How it works Section-->
+    <section id="how-it-works" class="how-it-works">
+        <h2 data-translate="how_it_works_title">Our comprehensive solution</h2>
+        <p class="subtitle" data-translate="how_it_works_subtitle">
+            EasyPark simplifies the parking management process in four simple steps.
+            Discover how our platform helps you optimize your parking lot.
+        </p>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="assets/solution1.png" alt="Register Vehicle">
+                <h3 data-translate="vehicle_registration">Real-time Control</h3>
+                <p data-translate="real_time_control">
+                Visualize the occupancy of each space instantly,
+                optimizing the flow
+                of entry and exit.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="assets/solution2.png" alt="Automated Access">
+                <h3 data-translate="automated_access">Complete Automation</h3>
+                <p data-translate="automated_access_description">
+                From vehicle registration to payment collection, 
+                the entire process is automated, 
+                reducing the need for manual intervention.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="assets/solution3.png" alt="Smart Payment">
+                <h3 data-translate="smart_payment">Smart Customer Management</h3>
+                <p data-translate="smart_payment_description">
+                Efficiently manage subscriptions, access history, and customer profiles
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="assets/solution4.png" alt="Monitoring">
+                <h3 data-translate="real_time_monitoring">Advanced Analytics</h3>
+                <p data-translate="advanced_analytics_description">
+                Access detailed reports on revenue, 
+                usage patterns to improve decision-making and maximize your profits.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <h2 data-translate="pricing_title">Our Plans</h2>
+    <div class="pricing-container">
+        <!-- Standard Plan -->
+        <div class="pricing-card">
+        <h3 data-translate="standard_plan_title">Standard</h3>
+        <span class="tag basic" data-translate="basic_tag">Basic</span>
+        <div class="price" data-translate="standard_price">$ 30 /per month</div>
+            <ul>
+            <li data-translate="days_free_trial">✔ 30-days of free trial</li>
+            <li data-translate="real_time_occupancy">✔ Real-time occupancy view</li>
+            <li data-translate="advanced_analytics">✔ Advanced analytics and reports</li>
+            <li data-translate="basic_revenue_reports">✔ Basic revenue reports</li>
+            <li data-translate="standard_support">✔ Standard support</li>
+            </ul>
+            <button class="btn btn-gray" data-translate="start_free">Start Free</button>
+        </div>
+        <!-- Pro Plan -->
+        <div class="pricing-card">
+        <h3 data-translate="pro_plan_title">Pro</h3>
+        <span class="tag advanced" data-translate="advanced_tag">Advanced</span>
+        <div class="price" data-translate="pro_price">$ 100 /per month</div>
+        <ul>
+            <li data-translate="all_basic_plan_features">✔ All Basic Plan features</li>
+            <li data-translate="advanced_analytics">✔ Advanced analytics and reports</li>
+            <li data-translate="priority_support">✔ 24/7 Priority support</li>
+            <li data-translate="complete_subscription">✔ Complete subscription</li>
+            <li data-translate="integrations_with_other_systems">✔ Integrations with other systems</li>
+        </ul>
+        <button class="btn btn-green" data-translate="order_now">Order Now</button>
+        </div>
+    </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="content">
+            <h1 data-translate="contact_title">Ready to Optimize Your Parking?</h1>
+            <p data-translate="contact_subtitle">Chat directly with one of our advisors to quickly resolve all your questions.</p>
+            <div class="buttons">
+                <div>
+                    <img src="assets/WhatsApp_icon.png" alt="WhatsApp" class="contact-logo">
+                    <a href="https://wa.me/1234567890" class="whatsapp-btn" data-translate="contact_whatsapp">
+                        <span>Start Chat on WhatsApp</span>
+                    </a>
+                </div>
+                <div>
+                    <img src="assets/Telegram_logo.svg" alt="Telegram" class="contact-logo">
+                    <a href="https://t.me/yourtelegram" class="telegram-btn" data-translate="contact_telegram">
+                        <span>Start Chat on Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <a>© 2025 EasyPark. All rights reserved</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
