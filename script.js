@@ -124,3 +124,23 @@ function updateContent() {
 
 // Initialize content in the default language
 updateContent();
+
+// Mobile navigation toggle
+const navToggle = document.getElementById('nav-toggle');
+const nav = document.querySelector('nav');
+
+if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                nav.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+}
